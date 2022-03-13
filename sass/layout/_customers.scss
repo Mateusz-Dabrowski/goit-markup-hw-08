@@ -1,6 +1,7 @@
 .customers {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .customers__icon {
   width: 106px;
@@ -8,10 +9,11 @@
   fill: currentColor;
 }
 .customers__link {
+  width: 210px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -25,5 +27,27 @@
   &:focus {
     border: 1px solid $blue-color;
     color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  // @media screen and (min-width: 480px) {
+  .customers {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers {
+    justify-content: space-between;
+  }
+  .customers__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    width: 170px;
+    margin-bottom: 0;
   }
 }
