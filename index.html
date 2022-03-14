@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>Studio</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
@@ -18,11 +18,20 @@
 
 <body>
     <!-- MENU NAVIGATION -->
-    <header class="header header-item">
+    <header class="header">
         <div class="container">
             <nav class="navigation">
                 <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio
                 </a>
+
+                <!-- do mobila hamburger -->
+
+                <button class="btn-menu" type="button" mobile-menu-open>
+                    <svg class="btn-menu__icon" width="24" height="16">
+                        <use href="./images/icons.svg#icon-menu_small"></use>
+                    </svg>
+                </button>
+
                 <ul class="menu">
                     <li class="menu__item">
                         <a class="menu__link current" href="./index.html">Agencja</a>
@@ -67,7 +76,6 @@
             </div>
         </section>
         <!-- END HERO  -->
-
 
         <!-- WHY US -->
         <section class="why-us section">
@@ -118,29 +126,31 @@
         </section>
         <!-- END WHY US -->
 
-
         <!-- OUR-OFFER -->
         <section class="our-offer section">
             <div class="container">
                 <h2 class="section-header">Czym się zajmujemy</h2>
                 <ul class="offer">
                     <li class="offer__item">
-                        <img class="offer__photo" src="images/offer/czym_sie_zajmujemy(1).jpg" alt="podpowiadamy rozwiązania"
-                            width="370" height="294" />
+                        <img class="offer__photo" src="./images/offer/solutions.jpg"
+                            srcset="./images/offer/solutions@2x.jpg 2x" alt="podpowiadamy rozwiązania" width="370"
+                            height="294" />
                         <div class="offer__header-wrapper">
                             <h3 class="offer__header">Aplikacje komputerowe</h3>
                         </div>
                     </li>
                     <li class="offer__item">
-                        <img class="offer__photo" src="images/offer/czym_sie_zajmujemy(2).jpg" alt="dbamy o responsywność"
-                            width="370" height="294" />
+                        <img class="offer__photo" src="./images/offer/responsiveness.jpg"
+                            srcset="./images/offer/responsiveness@2x.jpg 2x" alt="dbamy o responsywność" width="370"
+                            height="294" />
                         <div class="offer__header-wrapper">
                             <h3 class="offer__header">Aplikacje mobilne</h3>
                         </div>
                     </li>
                     <li class="offer__item">
-                        <img class="offer__photo" src="images/offer/czym_sie_zajmujemy(3).jpg" alt="dobieramy szatę graficzną"
-                            width="370" height="294" />
+                        <img class="offer__photo" src="./images/offer/graphics.jpg"
+                            srcset="./images/offer/graphics@2x.jpg 2x" alt="dobieramy szatę graficzną" width="370"
+                            height="294" />
                         <div class="offer__header-wrapper">
                             <h3 class="offer__header">Rozwiązania graficzne</h3>
                         </div>
@@ -148,21 +158,22 @@
                 </ul>
             </div>
         </section>
-
         <!-- END OUR-OFFER -->
-        <!-- OUR-TEAM -->
 
+
+
+        <!-- OUR-TEAM -->
         <section class="our-team section">
             <div class="container">
                 <h2 class="section-header">Nasz zespół</h2>
                 <ul class="team">
                     <li class="team__item">
-                        <img class="team__photo" src="images/team/zespol(1).jpg"
-                            alt="John Doe - Product Designer" width="270" height="260" />
+                        <img class="team__photo" src="./images/team/team-mobile-product-designer-450x460.jpg"
+                            srcset="./images/team/team-mobile-product-designer-900x920@2x.jpg 2x"
+                            alt="John Doe - Product Designer">
                         <h4 class="team__name">John Doe</h4>
                         <p class="team__position">Product Designer</p>
 
-                        <!-- social-icons -->
                         <ul class="social team__social">
                             <li class="social__item">
                                 <a class="social__link" href="#">
@@ -193,14 +204,15 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- END social-icons -->
+
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="images/team/zespol(2).jpg"
-                            alt="John Doe - Frontend Developer" width="270" height="260" />
+                        <img class="team__photo" src="./images/team/team-mobile-frontend-dev-450x460.jpg"
+                            srcset="./images/team/team-mobile-frontend-dev-900x920@2x.jpg 2x"
+                            alt="John Doe - Frontend Developer" />
                         <h4 class="team__name">John Doe</h4>
                         <p class="team__position">Frontend Developer</p>
-                        <!-- social-icons -->
+
                         <ul class="social team__social">
                             <li class="social__item">
                                 <a class="social__link" href="#">
@@ -231,14 +243,14 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- END social-icons -->
+
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="images/team/zespol(3).jpg" alt="John Doe - Marketing"
-                            width="270" height="260" />
+                        <img class="team__photo" src="./images/team/team-mobile-marketing-450x460.jpg"
+                            srcset="./images/team/team-mobile-marketing-450x460@2x.jpg 2x" alt="John Doe - Marketing" />
                         <h4 class="team__name">John Doe</h4>
                         <p class="team__position">Marketing</p>
-                        <!-- social-icons -->
+
                         <ul class="social team__social">
                             <li class="social__item">
                                 <a class="social__link" href="#">
@@ -269,14 +281,15 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- END social-icons -->
+
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="images/team/zespol(4).jpg" alt="John Doe - UI Designer"
-                            width="270" height="260" />
+                        <img class="team__photo" src="./images/team/team-mobile-ui-designer-450x460.jpg"
+                            srcset="./images/team/team-mobile-ui-designer-900x920@2x.jpg 2x"
+                            alt="John Doe - UI Designer" />
                         <h4 class="team__name">John Doe</h4>
                         <p class="team__position">UI Designer</p>
-                        <!-- social-icons -->
+
                         <ul class="social team__social">
                             <li class="social__item">
                                 <a class="social__link" href="#">
@@ -307,17 +320,14 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- END social-icons -->
+
                     </li>
                 </ul>
             </div>
         </section>
-
         <!-- END OUR-TEAM -->
 
-
         <!-- OUR-CUSTOMERS -->
-
         <section class="our-customers section">
             <div class="container">
                 <h2 class="section-header">Nasi klienci</h2>
@@ -367,9 +377,9 @@
                 </ul>
             </div>
         </section>
-
+        <!-- END OUR-CUSTOMERS -->
     </main>
-    <!-- END OUR-CUSTOMERS -->
+
     <!-- CONTACT-US -->
     <footer class="contact-us">
         <div class="container">
@@ -401,7 +411,6 @@
 
             <div class="join-us">
                 <h5 class="join-us__header">Dołącz do nas</h5>
-                <!-- social-icons -->
                 <ul class="social join-us__social">
                     <li class="social__item join-us__item">
                         <a class="social__link join-us__link" href="#">
@@ -432,15 +441,12 @@
                         </a>
                     </li>
                 </ul>
-                <!-- END social-icons -->
             </div>
 
-            <!-- newsletter -->
 
             <div class="newsletter">
                 <form class="newsletter__form">
                     <label class="newsletter__label">
-                        <!-- <label for="newsletter__emailt" class="newsletter__label"></label> -->
                         Zapisz się do newslettera
                         <div class="newsletter__wrapper">
                             <input id="newsletter__email" class="newsletter__email" type="email" name="email"
@@ -455,7 +461,6 @@
             </form>
         </div>
 
-        <!-- END newsletter -->
 
         </div>
     </footer>
@@ -470,7 +475,6 @@
                 </svg>
             </button>
 
-            <!-- form -->
 
             <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
 
@@ -512,13 +516,66 @@
                 <button class="btn btn--active form__btn" type="submit">Wyślij</button>
 
             </form>
-            <!-- END form -->
 
         </div>
     </div>
     <!-- END Backdrop  -->
 
+    <!--   mobile-menu -->
+
+    <div class="backdrop is-hidden" mobile-menu>
+        <div class="mobile-modal">
+            <button class="btn-close mobile" type="button" mobile-menu-close>
+                <svg class="btn-close__icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-x"></use>
+                </svg>
+            </button>
+            <ul class="menu-modal">
+                <li class="menu-modal__item">
+                    <a class="menu-modal__link current" href="./index.html">Agencja</a>
+                </li>
+                <li class="menu-modal__item">
+                    <a class="menu-modal__link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu-modal__item">
+                    <a class="menu-modal__link" href="#">Kontakt</a>
+                </li>
+            </ul>
+
+            <ul class="menu-modal-contacts">
+                <li class="menu-modal-contacts__item">
+                    <a href="tel:+48111111111" class="menu-modal-contacts__tel">
+                        +48 111 111 111
+                    </a>
+                </li>
+                <li class="menu-modal-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="menu-modal-contacts__mail">
+                        info@devstudio.com
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="menu-modal-social">
+                <li class="menu-modal-social__item">
+                    <a href="#" class="menu-modal-social__link">Instagram</a>
+                </li>
+                <li class="menu-modal-social__item">
+                    <a href="#" class="menu-modal-social__link">Twitter</a>
+                </li>
+                <li class="menu-modal-social__item">
+                    <a href="#" class="menu-modal-social__link">Facebook</a>
+                </li>
+                <li class="menu-modal-social__item">
+                    <a href="#" class="menu-modal-social__link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
